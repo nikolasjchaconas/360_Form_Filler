@@ -2,15 +2,20 @@
   "manifest_version": 2,
 
   "name": "Orgsync 360 Event Autofiller",
-  "description": "Helps student leaders fill 360 forms if they have recurring events every quarter",
+  "description": "Helps student leaders fill 360 forms for quarterly events",
   "version": "1.0",
 
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "Click Here to Change Autofill Settings"
   },
   "permissions": [
     "activeTab",
+    "tabs",
     "https://ajax.googleapis.com/"
-  ]
+  ],
+
+  "options_page": "360_form.html"
+
 }
