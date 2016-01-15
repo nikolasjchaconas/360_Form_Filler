@@ -1,0 +1,93 @@
+
+<!-- load stylesheets: internal -->
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css"></link>
+
+<link rel="stylesheet" type="text/css" href="formstyle.css"></link>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+
+<div id = "alert_popup" style = "padding:1px;">
+	<div class="alert alert-success">
+  <a href="#" class="close">&times;</a>
+  <strong>Success!</strong> Document Saved.
+</div>
+
+<div class="alert alert-warning">
+	<a href="#" class="close">&times;</a>
+  <strong>Warning!</strong> There was an error saving your document.
+</div>
+</div>
+
+
+<body>
+
+
+<div class = "page_heading">
+
+	<h1>This is your Template for Filling out 360 forms</h1>
+	<h4>Once you have filled this page out, click "save" at the bottom of the page. Next time you need to fill out a 360 event form, click the "fill page" link at the top of each orgsync page! Note that for each event you will have to change a few fields (event name, date...etc)</h4>
+
+</div>
+
+
+	<h3>Page 1: Event Hosts</h3>
+	
+
+	<div class="form-group">
+	  <label for="usr"><div class = "heading">Affiliated Organizations (Not Required)</div>
+	  	<div class = "note"> Is this event hosted or affiliated with any other organizations (including campus departments or local, national, or international organizations)? </div></label>
+	  <input type="text" class="form-control" id="q1p1">
+	</div>
+
+	<div class="form-group">
+	  <label for="usr"><div class = "heading">Event Representative #1 - Name and Title (Required)</div>
+	  	<div class = "note"> Who should campus officials contact with questions about this event?<br>E.g: Gary Gaucho, President </div></label>
+	  <input type="text" class="form-control" id="q2p1">
+	</div>
+
+	
+
+	<div class="form-group">
+	  <label for="usr"><div class = "heading">Event Representative #1 - Phone Number (Required)</div>
+	  	<div class = "note"> Format: 555-893-4569 </div></label>
+	  <input type="text" class="form-control" id="q3p1">
+	</div>
+
+	<div class="form-group">
+	  <label for="usr"><div class = "heading">Event Representative #1 - E-mail Address (Required)</div></label>
+	  <input type="text" class="form-control" id="q4p1">
+	</div>
+
+	<div class="form-group">
+	  <label for="usr"><div class = "heading">Event Representative #2 - Name and Title (Optional)</div>
+	  	<div class = "note"> Optional. List an additional contact in case the first representative is unavailable. </div></label>
+	  <input type="text" class="form-control" id="q5p1">
+	</div>
+
+
+	<div class="form-group">
+	  <label for="usr"><div class = "heading">Event Representative #2 - Phone Number (Optional)</div>
+	  	<div class = "note"> Format: 555-893-4569 </div></label>
+	  <input type="text" class="form-control" id="q6p1">
+	</div>
+
+
+
+	<div class="form-group">
+	  <label for="usr"><div class = "heading">Event Representative #2 - E-mail Address (Optional)</div></label>
+	  <input type="text" class="form-control" id="q7p1">
+	</div>
+
+	<center>
+	<button type="button" id="save_form" class="btn btn-primary">Save Form</button></center>
+
+    <script type="text/javascript" src="../360_form.js"></script>
+    
+
+	<!-- <div class="form-group">
+	  <label for="comment">Comment:</label>
+	  <textarea class="form-control" rows="5" id="comment"></textarea>
+	</div> -->
+
+
+</body>
