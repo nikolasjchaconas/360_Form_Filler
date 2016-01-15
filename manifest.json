@@ -14,18 +14,17 @@
     "activeTab",
     "tabs",
     "storage",
-    "notifications"
+    "notifications",
+    "tabs", "http://*/*"
   ],
   "content_scripts": [
       {
-        "matches": ["http://*/*"],
-        "js": ["content.js"],
-        "run_at": "document_start"
+        "matches": ["https://orgsync.com/35502/forms/32949/submit_on_behalf_of"],
+        "js": ["inject.js"],
+        "css": ["inject_button.css"]
       }
   ],
    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
-
-  "options_page": "360_form.html",
   "web_accessible_resources": ["inject.js"]
 
 }

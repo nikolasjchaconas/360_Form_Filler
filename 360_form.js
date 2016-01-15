@@ -33,16 +33,6 @@ document.getElementById('save_form').addEventListener('click', function() {
     // var page_36 = "http://www.youtube.com";
     // chrome.tabs.create({ url: page_36 });
     $(".alert").hide();
-
-    var q1p1 = document.getElementById("q1p1").value;
-
-    if (!q1p1) {
-    	$(".alert.alert-warning").show();
-    	return;
-    }
-    else {
-    	
-    }
     //chrome.storage.sync.set({"q7p1": document.getElementById("q7p1").value});
     page1.forEach(function(index) {
     	var text_box_id = "q".concat(index,"p1");
